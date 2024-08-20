@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* General Styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff; /* Light blue background like the sky */
+        color: #333;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1,
+      h2 {
+        color: #2e8b57; /* Sea green for headers */
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      /* Image Style */
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Audio and Video Styles */
+      audio,
+      video {
+        display: block;
+        margin: 20px 0;
+        width: 100%;
+        max-width: 600px;
+        border: 2px solid #2e8b57; /* Sea green border for media */
+        border-radius: 8px;
+      }
+
+      /* Container Styles */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 60px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Day at the Beach</h1>
+      <p>
+        Last weekend, I visited a beautiful beach. Here are some moments I
+        captured:
+      </p>
+
+      <!-- Image of the Sunset -->
+      <h2>Sunset at the Beach</h2>
+    
+      <picture>
+        <source media="(min-width: 1024px)" srcset="../asset/picben.jpg"> <!-- For laptops and larger screens -->
+        <source media="(min-width: 768px)" srcset="../asset/picben.jpg"> <!-- For tablets -->
+        <source media="(min-width: 480px)" srcset="../asset/picben.jpg"> <!-- For mobile devices -->
+        <img src="../asset/picben.jpg" alt="A beautiful sunset at the beach"> <!-- Fallback image -->
+    </picture>
+      <p>The sunset was breathtaking, with vibrant colors painting the sky.</p>
+
+      <!-- Audio of Waves -->
+      <h2>Sound of the Waves</h2>
+      <audio controls>
+        <source src="../asset/wavesound.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <p>
+        The sound of the waves crashing on the shore was incredibly soothing.
+      </p>
+
+      <!-- Video of the Beach -->
+      <h2>Video of the Beach</h2>
+      <video controls width="600">
+        <source src="../asset/beachvideo.mp4" type="video/mp4" />
+        Your browser does not support the video element.
+      </video>
+      <p>This video captures the peaceful atmosphere of the beach.</p>
+    </div>
+  </body>
+</html>
